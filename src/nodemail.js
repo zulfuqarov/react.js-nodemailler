@@ -25,16 +25,16 @@ app.get('/send-email', async (req, res) => {
 
     try {
         const transporter = nodemailer.createTransport({
-            host: 'mail.hasimovtabriz.com.tr',
-            port: 465,
+            host: '',
+            port: ,
             secure: true,
             auth: {
-                user: 'admin@hasimovtabriz.com.tr',
-                pass: '3865606rt.'
+                user: '',
+                pass: '.'
             }
         });
         const info = await transporter.sendMail({
-            from: 'Edumy <<admin@hasimovtabriz.com.tr>',
+            from: '',
             to: to,
             subject: 'Edumy university',
             html: htmltext,
